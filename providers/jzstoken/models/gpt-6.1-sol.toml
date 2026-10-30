@@ -1,7 +1,10 @@
 # Pricing: https://jzstoken.com/model-pricing/gpt-6.1-sol (2026-10-30).
 # Effort: reasoning_effort = low|medium|high|xhigh|max
+# freeform custom tools are explicitly omitted; the host publishes no certification
+# and no customer API key was available for the requested restrictive-grammar probe.
 schema = 2
 base_model = "openai/gpt-6.1-sol"
+base_model_omit = ["capabilities.tools.freeform"]
 
 [capabilities]
 reasoning = { supported = true, effort = ["low", "medium", "high", "xhigh", "max"] }

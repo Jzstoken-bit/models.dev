@@ -1,8 +1,9 @@
 # Pricing: https://jzstoken.com/model-pricing/deepseek-v4.1-flash (2026-10-30).
 # Toggle: thinking.type = enabled|disabled
 # Effort: reasoning_effort = low|high|max
-# The displayed base prices are off-peak; JZSTOKEN documents a 2x peak every day
-# at 09:00-12:00 and 14:00-18:00 Asia/Shanghai (01:00-04:00 and 06:00-10:00 UTC).
+# The displayed base prices are off-peak. The cited page says: "During
+# 09:00-12:00 x2, 14:00-18:00 x2 (Asia/Shanghai) every rate above is multiplied
+# by the peak factor." It states no weekday or holiday restriction.
 schema = 2
 base_model = "deepseek/deepseek-v4.1-flash"
 
