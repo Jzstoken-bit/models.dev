@@ -1,0 +1,9 @@
+# JZSTOKEN is an OpenAI-compatible multi-model gateway.
+# Chat Completions: POST https://jzstoken.com/api/v1/chat/completions
+# Pricing source: https://jzstoken.com (catalog scraped 2026-10-30, USD per 1M tokens)
+name = "JZSTOKEN"
+npm = "@ai-sdk/openai-compatible"
+opencodeai = "@opencode/ai/providers/openai-compatible"
+env = ["JZSTOKEN_API_KEY"]
+api = "https://jzstoken.com/api/v1"
+doc = "https://jzstoken.com"
