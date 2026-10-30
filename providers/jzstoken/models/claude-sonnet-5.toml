@@ -1,0 +1,16 @@
+# Pricing: https://jzstoken.com (2026-10-30). OpenAI-compatible Chat Completions.
+schema = 2
+base_model = "anthropic/claude-sonnet-5"
+
+[capabilities]
+tools = { supported = true }
+reasoning = { supported = true, effort = ["low", "medium", "high"] }
+structured_output = true
+cache = { implicit = true }
+
+[cost.text.input]
+price = 0.778
+cache = { read = 0.078, write = 0.973 }
+
+[cost.text.output]
+price = 3.892
