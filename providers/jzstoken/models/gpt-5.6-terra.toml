@@ -1,0 +1,16 @@
+# Pricing: https://jzstoken.com/model-pricing/gpt-5.6-terra (2026-10-30).
+# Effort: reasoning_effort = none|low|medium|high|xhigh|max
+schema = 2
+base_model = "openai/gpt-5.6-terra"
+
+[capabilities]
+reasoning = { supported = true, effort = ["none", "low", "medium", "high", "xhigh", "max"] }
+structured_output = true
+cache = { implicit = true }
+
+[cost.text.input]
+price = 0.2335
+cache = { read = 0.0234, write = 0.3503 }
+
+[cost.text.output]
+price = 1.40

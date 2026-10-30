@@ -1,16 +1,18 @@
-# Pricing: https://jzstoken.com (2026-10-30). OpenAI-compatible Chat Completions.
+# Pricing: https://jzstoken.com/model-pricing/gpt-5.5 (2026-10-30).
+# Effort: reasoning_effort = none|low|medium|high|xhigh
+# freeform custom tools are left inherited/unspecified because JZSTOKEN publishes no
+# per-model custom-tool certification and no customer API key was available for a probe.
 schema = 2
 base_model = "openai/gpt-5.5"
 
 [capabilities]
-tools = { supported = true }
-reasoning = { supported = true, effort = ["none", "low", "medium", "high"] }
+reasoning = { supported = true, effort = ["none", "low", "medium", "high", "xhigh"] }
 structured_output = true
 cache = { implicit = true }
 
 [cost.text.input]
-price = 0.389
-cache = { read = 0.039 }
+price = 0.3892
+cache = { read = 0.0389, write = 0.3892 }
 
 [cost.text.output]
-price = 2.335
+price = 2.34
