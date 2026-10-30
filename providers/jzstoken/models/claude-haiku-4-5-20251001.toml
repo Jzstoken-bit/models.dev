@@ -8,7 +8,6 @@ base_model = "anthropic/claude-haiku-4-5-20251001"
 [capabilities]
 reasoning = { supported = true, toggle = true }
 structured_output = true
-cache = { implicit = true }
 
 [cost.text.input]
 price = 0.0778
