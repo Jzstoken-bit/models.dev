@@ -8,6 +8,7 @@ base_model = "alibaba/qwen3.8-max"
 [capabilities]
 reasoning = { supported = true, default = { type = "effort", value = "xhigh" }, toggle = true, effort = ["low", "medium", "xhigh"], budget = { min = 0, max = 262_144 } }
 structured_output = true
+cache = { implicit = true }
 
 [cost.text.input]
 price = 1.56
