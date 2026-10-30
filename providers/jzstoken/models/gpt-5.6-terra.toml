@@ -1,7 +1,12 @@
 # Pricing: https://jzstoken.com/model-pricing/gpt-5.6-terra (2026-10-30).
 # Effort: reasoning_effort = none|low|medium|high|xhigh|max
-# freeform custom tools are explicitly omitted; the host publishes no certification
-# and no customer API key was available for the requested restrictive-grammar probe.
+# freeform custom tools: live probe 2026-10-30 America/Tijuana against
+# https://jzstoken.com/api/v1/chat/completions (Standard customer key).
+# Classic type=function tools: HTTP 200 with tool_calls ¡ª supported.
+# type=custom freeform formats text / lark / regex: HTTP 400
+# code=request_feature_unsupported
+# ("native Responses bridge cannot preserve custom; use a matching upstream protocol").
+# Keep base_model_omit = ["capabilities.tools.freeform"] for this chat-completions host.
 schema = 2
 base_model = "openai/gpt-5.6-terra"
 base_model_omit = ["capabilities.tools.freeform"]
