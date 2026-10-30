@@ -1,0 +1,17 @@
+# Pricing: https://jzstoken.com (2026-10-30). OpenAI-compatible Chat Completions.
+# Model id matches JZSTOKEN catalog: claude-haiku-4-5-20251001
+schema = 2
+base_model = "anthropic/claude-haiku-4-5-20251001"
+
+[capabilities]
+tools = { supported = true }
+reasoning = { supported = true, effort = ["low", "medium", "high"] }
+structured_output = true
+cache = { implicit = true }
+
+[cost.text.input]
+price = 0.078
+cache = { read = 0.008, write = 0.117 }
+
+[cost.text.output]
+price = 0.389
