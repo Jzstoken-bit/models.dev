@@ -1,0 +1,16 @@
+# Pricing: https://jzstoken.com (2026-10-30). OpenAI-compatible Chat Completions.
+schema = 2
+base_model = "moonshotai/kimi-k2.6"
+
+[capabilities]
+tools = { supported = true }
+reasoning = { supported = true, effort = ["low", "medium", "high"] }
+structured_output = true
+cache = { implicit = true }
+
+[cost.text.input]
+price = 0.156
+cache = { read = 0.016 }
+
+[cost.text.output]
+price = 0.778
